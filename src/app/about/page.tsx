@@ -5,11 +5,11 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-24 bg-[#F6F8F9] relative overflow-hidden">
-        <div className="max-w-screen-xl mx-auto px-6 lg:px-8 text-center relative z-10">
+      <section className="pt-24 sm:pt-32 pb-16 sm:pb-24 bg-[#F6F8F9] relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <span className="inline-block px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 rounded-full mb-6">Our Mission</span>
-          <h1 className="font-headline text-5xl md:text-6xl font-black text-on-surface mb-6">Accelerate Your Innovation</h1>
-          <p className="font-body text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-black text-on-surface mb-6">Accelerate Your Innovation</h1>
+          <p className="font-body text-lg sm:text-xl text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
             At AI Expert Academy, we turn curiosity into skill with hands-on education designed for real-world AI challenges. We are committed to preparing the next generation for the future by bringing cutting-edge technology directly into the enterprise.
           </p>
         </div>

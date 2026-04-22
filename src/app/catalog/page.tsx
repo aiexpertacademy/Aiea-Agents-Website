@@ -26,13 +26,13 @@ export default function Catalog() {
   });
 
   return (
-    <div className="min-h-screen bg-[#F6F8F9] pt-32 pb-24 selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen bg-[#F6F8F9] pt-24 sm:pt-32 pb-24 selection:bg-primary/20 selection:text-primary">
       {/* HEADER PAGE SECTION */}
-      <section className="max-w-screen-2xl mx-auto px-6 lg:px-8 mb-16 text-center">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16 text-center">
          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <span className="inline-block px-4 py-1 text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 rounded-full mb-6">Complete Agent Repository</span>
-            <h1 className="font-headline text-5xl md:text-6xl font-black text-on-surface mb-6">Global Node Catalog</h1>
-            <p className="font-body text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">
+            <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-black text-on-surface mb-6">Global Node Catalog</h1>
+            <p className="font-body text-lg sm:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">
               Explore our entire operational swarm of hyper-specialized AI nodes engineered for maximum enterprise efficacy.
             </p>
          </motion.div>

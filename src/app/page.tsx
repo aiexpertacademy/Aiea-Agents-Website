@@ -118,7 +118,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-white/40 blur-[100px]"></div>
       </div>
 
-      <section className="max-w-screen-2xl mx-auto px-6 lg:px-8 py-20 relative">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 md:py-24 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             variants={containerVariants}
@@ -131,7 +131,7 @@ export default function Home() {
               <span className="font-label text-sm uppercase font-bold tracking-widest text-primary">The Neural Swarm</span>
             </motion.div>
 
-            <motion.h1 variants={itemVariants} className="font-headline text-5xl lg:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface">
+            <motion.h1 variants={itemVariants} className="font-headline text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface">
               An Army of <span className="text-gradient-candy">50+ Specialized AI Agents.</span>
             </motion.h1>
 
@@ -154,7 +154,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative aspect-square w-full max-w-lg mx-auto lg:max-w-none"
+            className="relative aspect-square w-full max-w-xs sm:max-w-sm mx-auto lg:max-w-none"
           >
             <div className="w-full h-full rounded-full bg-[#0A0D14] overflow-hidden relative flex items-center justify-center border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
               <canvas
@@ -175,7 +175,7 @@ export default function Home() {
               />
 
               <div className="relative z-10 text-center">
-                <span className="font-headline text-8xl font-black text-on-surface drop-shadow-[0_4px_12px_rgba(255,255,255,0.8)]">
+                <span className="font-headline text-6xl sm:text-8xl font-black text-on-surface drop-shadow-[0_4px_12px_rgba(255,255,255,0.8)]">
                   50+
                 </span>
                 <p className="font-label text-xl tracking-widest uppercase text-primary mt-2 font-black">
@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-screen-2xl mx-auto px-6 lg:px-8 py-12">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       <section className="py-24 relative bg-primary/5">
-        <div className="max-w-screen-2xl mx-auto px-6 lg:px-8 mb-12 flex justify-between items-end">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 flex flex-col lg:flex-row justify-between lg:items-end gap-6">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -272,13 +272,13 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <Link href="/catalog" className="hidden md:flex items-center gap-3 text-primary hover:text-primary-dim transition-all font-bold group">
+            <Link href="/catalog" className="flex items-center gap-3 text-primary hover:text-primary-dim transition-all font-bold group lg:whitespace-nowrap">
               View Full Catalog <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>
 
-        <div className="w-full pb-12 px-6 lg:px-8 max-w-screen-2xl mx-auto">
+        <div className="w-full pb-12 px-4 sm:px-6 lg:px-8 max-w-screen-2xl mx-auto">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -382,7 +382,7 @@ export default function Home() {
                 <div><p className="font-bold text-sm">Rahul Verma</p><p className="text-xs opacity-50 mt-1">Operations Director</p></div>
               </div>
             </div>
-            <div className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md relative md:-translate-y-4 hover:bg-white/10 transition-colors cursor-pointer">
+            <div className="bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md relative hover:bg-white/10 transition-colors cursor-pointer">
               <div className="flex gap-1 text-yellow-400 mb-6">
                 <Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" /><Star className="w-5 h-5 fill-current" />
               </div>

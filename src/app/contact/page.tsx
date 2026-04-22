@@ -4,16 +4,16 @@ import { MessageSquare, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white pt-32 pb-24">
-      <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="font-headline text-5xl font-black text-on-surface mb-6">Get in Touch</h1>
-          <p className="font-body text-xl text-on-surface-variant max-w-2xl mx-auto">
+    <div className="min-h-screen bg-white pt-24 sm:pt-32 pb-24">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="font-headline text-4xl sm:text-5xl font-black text-on-surface mb-6">Get in Touch</h1>
+          <p className="font-body text-lg sm:text-xl text-on-surface-variant max-w-2xl mx-auto">
             Ready to integrate custom AI agents into your business operations? Our dedicated team is here to help you accelerate your innovation.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Contact Details from AIEA */}
           <div className="space-y-10">
              <div className="glass-panel p-8 rounded-3xl border border-primary/10 shadow-lg relative overflow-hidden bg-[#F6F8F9]">
