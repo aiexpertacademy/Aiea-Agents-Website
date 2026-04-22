@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -31,11 +30,9 @@ export default function RootLayout({
       className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col selection:bg-primary/30 selection:text-primary">
-        <SmoothScroll>
           <Navbar />
           <main className="flex-grow pt-28 pb-24">{children}</main>
           <Footer />
-        </SmoothScroll>
       </body>
     </html>
   );

@@ -15,25 +15,28 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
         <div className="flex items-center gap-8">
-          <Link href="/" className="text-2xl font-black tracking-tighter text-gradient-candy">
-            AIEA Agents
+          <Link href="/" className="flex items-center">
+            <Image src="/logo.png" alt="AIEA Agents Logo" width={500} height={200} unoptimized={true} priority={true} className="h-[90px] w-auto object-contain drop-shadow-md" />
           </Link>
-          <div className="hidden md:flex gap-6 font-headline font-bold tracking-tight text-sm">
-            <Link href="#" className="text-primary border-b-2 border-primary pb-1">
-              Agents
-            </Link>
-            <Link href="#" className="text-on-surface-variant hover:text-primary transition-colors">
-              About
-            </Link>
-            <Link href="#" className="text-on-surface-variant hover:text-primary transition-colors">
-              Enterprise
-            </Link>
-            <Link href="#" className="text-on-surface-variant hover:text-primary transition-colors">
-              Docs
-            </Link>
-            <Link href="#" className="text-on-surface-variant hover:text-primary transition-colors">
-              Pricing
-            </Link>
+          <div className="hidden lg:flex gap-6 font-headline font-bold tracking-tight text-sm items-center">
+            <Link href="/" className="text-on-surface-variant hover:text-primary transition-colors">Home</Link>
+            
+            <div className="relative group h-full flex items-center">
+              <span className="cursor-default text-on-surface-variant group-hover:text-primary transition-colors py-4 font-semibold">Services</span>
+              <div className="absolute top-14 left-0 w-80 bg-white border border-primary/20 shadow-2xl rounded-2xl p-3 flex-col gap-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex pointer-events-none group-hover:pointer-events-auto">
+                <span className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">Social Media Growth</span>
+                <span className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">Video and Motion AI Studio</span>
+                <span className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">Content and Media Creation Suite</span>
+                <span className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">Branding and Professional Edge</span>
+                <span className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">Community and Collaboration Hub</span>
+              </div>
+            </div>
+
+            <Link href="/about" className="text-on-surface-variant hover:text-primary transition-colors">About</Link>
+            <Link href="/#price" className="text-on-surface-variant hover:text-primary transition-colors">Pricing</Link>
+            <Link href="/docs" className="text-on-surface-variant hover:text-primary transition-colors">Docs</Link>
+            <Link href="/faq" className="text-on-surface-variant hover:text-primary transition-colors">FAQ</Link>
+            <Link href="/contact" className="text-on-surface-variant hover:text-primary transition-colors">Contact</Link>
           </div>
         </div>
         <div className="flex items-center gap-4">
@@ -43,16 +46,10 @@ export default function Navbar() {
           <button className="text-on-surface-variant hover:text-primary transition-colors">
             <Bell className="w-6 h-6" />
           </button>
-          <button className="bg-primary text-white font-bold py-2.5 px-6 rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 active:scale-95 text-sm hidden sm:block">
+          <a href="https://ai-agent-platform-self.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-primary text-white font-bold py-2.5 px-6 rounded-full hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 active:scale-95 text-sm hidden sm:block">
             Register
-          </button>
-          <div className="w-10 h-10 rounded-full border-2 border-primary/20 p-0.5 overflow-hidden ml-2 cursor-pointer bg-white">
-            <img
-              alt="User profile"
-              className="w-full h-full rounded-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6xxENPkuaBnVmCtn8sqPCWTOSo17ExaujzOQG-0PJ0Ox3EfKCCspEQ-C96mi5Ud65hrOwkAU55OqeB2PWUVOEkc5-N9rg9k4K6f1KazppQo63Q1q_WsONY_boQQB_BHtaltV2nuPTdglv1or26YJA5bAvZ00a7dg-K57j3Y5Hll8zcGop8kaxG5Uc6vda9YfXrzh5GNmMxKKFzIz9Cx94nG8h8q0CojZ3xt4UsxXn64xPaGY76seQTELtxT5Eewy0uBuNEuSyzoA"
-            />
-          </div>
+          </a>
+
         </div>
       </div>
     </motion.nav>
