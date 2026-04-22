@@ -104,3 +104,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Disable smooth scroll on all devices */
+html {
+  scroll-behavior: auto !important;
+}
