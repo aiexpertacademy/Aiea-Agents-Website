@@ -20,11 +20,11 @@ export default function Navbar() {
   ];
 
   const services = [
-    "Social Media Growth",
-    "Video and Motion AI Studio",
-    "Content and Media Creation Suite",
-    "Branding and Professional Edge",
-    "Community and Collaboration Hub",
+    { label: "Social Media Growth", domain: "Marketing and Sales" },
+    { label: "Video and Motion AI Studio", domain: "Creative and Design Tools" },
+    { label: "Content and Media Creation Suite", domain: "Content and Publishing" },
+    { label: "Branding and Professional Edge", domain: "Creative and Design Tools" },
+    { label: "Community and Collaboration Hub", domain: "Productivity and Collaboration" },
   ];
 
   return (
@@ -57,7 +57,7 @@ export default function Navbar() {
             <span className="cursor-default text-on-surface-variant group-hover:text-primary transition-colors py-4 font-semibold">Services</span>
             <div className="absolute top-14 left-0 w-80 bg-white border border-primary/20 shadow-2xl rounded-2xl p-3 flex-col gap-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 flex pointer-events-none group-hover:pointer-events-auto">
               {services.map(s => (
-                <span key={s} className="cursor-default px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">{s}</span>
+                <Link key={s.label} href={`/catalog?domain=${encodeURIComponent(s.domain)}`} className="block px-4 py-3 hover:bg-secondary/10 rounded-xl text-on-surface hover:text-primary transition-all font-semibold">{s.label}</Link>
               ))}
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                     className="overflow-hidden pl-4"
                   >
                     {services.map(s => (
-                      <span key={s} className="block py-2.5 px-4 text-sm text-on-surface-variant font-medium">{s}</span>
+                      <Link key={s.label} href={`/catalog?domain=${encodeURIComponent(s.domain)}`} onClick={() => setMobileOpen(false)} className="block py-2.5 px-4 text-sm text-on-surface-variant hover:text-primary font-medium transition-colors">{s.label}</Link>
                     ))}
                   </motion.div>
                 )}

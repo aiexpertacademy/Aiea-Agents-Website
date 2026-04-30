@@ -1,4 +1,4 @@
-import { Code2, Bug, CodeXml, Network, Zap, Target, Smartphone, Image as ImageIcon, Paintbrush, Sparkles, LayoutTemplate, MonitorPlay, Video, Megaphone, Mail, TrendingUp, Cpu, FileText, Globe, BarChart, Box, Newspaper, ShieldAlert, ShieldX, Mic, MessageCircle, FileSearch, Database } from "lucide-react";
+import { Code2, Bug, CodeXml, Network, Zap, Target, Smartphone, Image as ImageIcon, Paintbrush, Sparkles, LayoutTemplate, MonitorPlay, Video, Film, Megaphone, Mail, TrendingUp, LineChart, Cpu, FileText, PenLine, Globe, BarChart, Box, Newspaper, ShieldAlert, Filter, ShieldX, Mic, MessageCircle, FileSearch, Database } from "lucide-react";
 
 export const DOMAINS = [
   "All", 
@@ -31,7 +31,7 @@ export const AGENTS = [
   { name: "App UI/UX Designer", desc: "Generate wireframes, color palettes, components & Figma prompts.", domain: "Creative and Design Tools", icon: LayoutTemplate },
   { name: "Web Designer", desc: "Generate complete websites with live preview & instant download.", domain: "Creative and Design Tools", icon: MonitorPlay },
   { name: "AI Ad Video Generator", desc: "Generate stunning ad videos with AI using Veo 3.1.", domain: "Creative and Design Tools", icon: Video },
-  { name: "Video Generator", desc: "Generate short video clips from text descriptions and scripts.", domain: "Creative and Design Tools", icon: Video },
+  { name: "Video Generator", desc: "Generate short video clips from text descriptions and scripts.", domain: "Creative and Design Tools", icon: Film },
 
   // Marketing and Sales
   { name: "AI Ad Generator", desc: "Generate complete ads with AI copy, design brief & live preview.", domain: "Marketing and Sales", icon: Megaphone },
@@ -41,14 +41,14 @@ export const AGENTS = [
 
   // Content and Publishing
   { name: "Doc Summarizer", desc: "Extract key insights and summaries from long documents.", domain: "Content and Publishing", icon: FileText },
-  { name: "Content Writer", desc: "Generate blog posts, emails, and marketing copy.", domain: "Content and Publishing", icon: FileText },
+  { name: "Content Writer", desc: "Generate blog posts, emails, and marketing copy.", domain: "Content and Publishing", icon: PenLine },
   { name: "Translator", desc: "Translate text between 100+ languages with natural fluency.", domain: "Content and Publishing", icon: Globe },
   { name: "Data Analyzer", desc: "Upload datasets and get instant visual analytics and insights.", domain: "Content and Publishing", icon: BarChart },
   { name: "Web Scraper", desc: "Extract structured data from any website automatically.", domain: "Content and Publishing", icon: Box },
   { name: "Latest News", desc: "AI-summarized Indian & international news from the last 24 hours.", domain: "Content and Publishing", icon: Newspaper },
-  { name: "AI Trend Analyst", desc: "Industry trend analysis with stats, predictions & PDF export.", domain: "Content and Publishing", icon: TrendingUp },
+  { name: "AI Trend Analyst", desc: "Industry trend analysis with stats, predictions & PDF export.", domain: "Content and Publishing", icon: LineChart },
   { name: "Fake News Detector", desc: "AI credibility analysis with fact-checks, bias & fallacy detection.", domain: "Content and Publishing", icon: ShieldAlert },
   { name: "Instagram Spam Detector", desc: "Detect spam, bots & deception in Instagram comments and bios.", domain: "Content and Publishing", icon: ShieldX },
-  { name: "Content Moderator", desc: "Detect and filter harmful or inappropriate content.", domain: "Content and Publishing", icon: ShieldAlert },
+  { name: "Content Moderator", desc: "Detect and filter harmful or inappropriate content.", domain: "Content and Publishing", icon: Filter },
   { name: "Speech to Text", desc: "Transcribe audio files and live speech with high accuracy.", domain: "Content and Publishing", icon: Mic },
 ];

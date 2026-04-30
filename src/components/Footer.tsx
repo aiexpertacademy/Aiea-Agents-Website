@@ -24,7 +24,7 @@ export default function Footer() {
         <Link href="#" className="hover:text-primary transition-colors">GitHub</Link>
       </div>
       <div className="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant/60 text-center px-4">
-        © 2024 AIEA Agents. Sweetening the digital frontier.
+        © 2025 AIEA Agents. Sweetening the digital frontier.
       </div>
     </motion.footer>
   );
